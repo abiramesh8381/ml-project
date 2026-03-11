@@ -17,4 +17,6 @@
         "price": 14.99,
         "in_stock": true
     }
+    {"title": "Atomic Habits", "author": "James Clear", "price": 14.99, "in_stock": True}
+
 ]
