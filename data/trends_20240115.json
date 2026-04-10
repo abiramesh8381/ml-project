@@ -1,0 +1,47 @@
+[
+  {
+    "post_id": 1,
+    "title": "AI model beats humans at coding",
+    "category": "technology",
+    "score": 1200,
+    "num_comments": 4891,
+    "author": "tech_guru",
+    "collected_at": "2024-01-15T10:00:00"
+  },
+  {
+    "post_id": 2,
+    "title": "Government announces new climate policy",
+    "category": "worldnews",
+    "score": 850,
+    "num_comments": 320,
+    "author": "news_writer",
+    "collected_at": "2024-01-15T10:05:00"
+  },
+  {
+    "post_id": 3,
+    "title": "NBA finals game goes into overtime",
+    "category": "sports",
+    "score": 640,
+    "num_comments": 210,
+    "author": "sportsfan",
+    "collected_at": "2024-01-15T10:10:00"
+  },
+  {
+    "post_id": 4,
+    "title": "NASA discovers new exoplanet",
+    "category": "science",
+    "score": 980,
+    "num_comments": 450,
+    "author": "astro_researcher",
+    "collected_at": "2024-01-15T10:15:00"
+  },
+  {
+    "post_id": 5,
+    "title": "Netflix releases award-winning documentary",
+    "category": "entertainment",
+    "score": 720,
+    "num_comments": 180,
+    "author": "film_buff",
+    "collected_at": "2024-01-15T10:20:00"
+  }
+]

@@ -1,0 +1,6 @@
+post_id,title,category,score,num_comments,author,collected_at,engagement,is_popular
+1,AI model beats humans at coding,technology,1200,4891,tech_guru,2024-01-15 10:00:00,4.072439633638634,True
+2,Government announces new climate policy,worldnews,850,320,news_writer,2024-01-15 10:05:00,0.37602820211515864,False
+3,NBA finals game goes into overtime,sports,640,210,sportsfan,2024-01-15 10:10:00,0.32761310452418096,False
+4,NASA discovers new exoplanet,science,980,450,astro_researcher,2024-01-15 10:15:00,0.45871559633027525,True
+5,Netflix releases award-winning documentary,entertainment,720,180,film_buff,2024-01-15 10:20:00,0.24965325936199723,False
