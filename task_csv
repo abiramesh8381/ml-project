@@ -1,0 +1,51 @@
+"""
+TrendPulse - Task 2: Clean the Data & Save as CSV
+-------------------------------------------------
+This script loads the raw JSON file from Task 1,
+cleans the data using Pandas, and saves a tidy CSV.
+
+Steps:
+1. Load JSON file into DataFrame
+2. Clean the data:
+   - Remove duplicates
+   - Drop rows with missing values
+   - Ensure correct data types
+   - Remove low-quality stories (score < 5)
+   - Strip whitespace from titles
+3. Save cleaned data to CSV
+4. Print summary statistics
+"""
+
+import pandas as pd
+import os
+from datetime import datetime
+
+def main():
+    # Step 1: Load JSON file
+    today_str = datetime.now().strftime("%Y%m%d")
+    json_file = f"data/trends_{today_str}.json"
+
+    if not os.path.exists(json_file):
+        print(f"Error: {json_file} not found. Run Task 1 first.")
+        return
+
+    df = pd.read_json(json_file)
+    print(f"Loaded {len(df)} stories from {json_file}")
+
+    # Step 2: Clean the Data
+
+    # Remove duplicates by post_id
+    df = df.drop_duplicates(subset="post_id")
+    print(f"After removing duplicates: {len(df)}")
+
+    # Drop rows with missing critical fields
+    df = df.dropna(subset=["post_id", "title", "score"])
+    print(f"After removing nulls: {len(df)}")
+
+    # Ensure score and num_comments are integers
+    df["score"] = df["score"].astype(int)
+    df["num_comments"] = df["num_comments"].fillna(0).astype(int)
+
+    # Remove low-quality stories (score < 5)
+    df = df[df["score"] >= 5]
+    print
